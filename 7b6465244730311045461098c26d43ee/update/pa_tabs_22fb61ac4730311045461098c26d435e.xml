@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="INSERT_OR_UPDATE">
+        <canvas_page display_value="PA HelloWorld - New Tab">aafb61ac4730311045461098c26d435b</canvas_page>
+        <name>HelloWorld - New Tab</name>
+        <page display_value="PA HelloWorld - New Tab">66fb61ac4730311045461098c26d435a</page>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-18 12:12:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>22fb61ac4730311045461098c26d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HelloWorld - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HelloWorld" source="x_1113194_hellowor">7b6465244730311045461098c26d43ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HelloWorld">7b6465244730311045461098c26d43ee</sys_scope>
+        <sys_update_name>pa_tabs_22fb61ac4730311045461098c26d435e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-18 12:12:21</sys_updated_on>
+    </pa_tabs>
+</record_update>

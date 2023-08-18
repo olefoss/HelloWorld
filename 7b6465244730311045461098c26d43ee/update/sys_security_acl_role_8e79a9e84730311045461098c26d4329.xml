@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-18 12:01:23</sys_created_on>
+        <sys_id>8e79a9e84730311045461098c26d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1113194_hellowor_helloworld.x_1113194_hellowor.admin</sys_name>
+        <sys_package display_value="HelloWorld" source="x_1113194_hellowor">7b6465244730311045461098c26d43ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HelloWorld">7b6465244730311045461098c26d43ee</sys_scope>
+        <sys_security_acl display_value="x_1113194_hellowor_helloworld">0e79a9e84730311045461098c26d4327</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_8e79a9e84730311045461098c26d4329</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-18 12:01:23</sys_updated_on>
+        <sys_user_role display_value="x_1113194_hellowor.admin" name="x_1113194_hellowor.admin">b57969e84730311045461098c26d43fb</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

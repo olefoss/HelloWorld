@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function ($timeout) {
+	var c = this;
+	c.darkness = "";
+	if (!c.options.c_color || !c.options.c_color.length)
+		c.options.c_color = 'red';
+	
+	var z = c.options.zone || "America/Los_Angeles"
+	c.date = moment().tz(z);
+	c.majors = new Array(12);
+	c.minors = new Array(60); 
+	(function tick() {
+		c.date = new moment().tz(z);
+		var t = c.date.hours();
+		c.darkness = "";
+		if (t > 17)
+			c.darkness = "evening";
+		if (t > 19)
+			c.darkness = "night";
+		if (t < 5)
+			c.darkness = "night";
+		
+		$timeout(tick, 1000);
+	})();
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>helloworld_clock</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>HelloWorld Clock</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-18 11:51:51</sys_created_on>
+        <sys_id>1e476d284730311045461098c26d43d9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>HelloWorld Clock</sys_name>
+        <sys_package display_value="HelloWorld" source="x_1113194_hellowor">7b6465244730311045461098c26d43ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HelloWorld">7b6465244730311045461098c26d43ee</sys_scope>
+        <sys_update_name>sp_widget_1e476d284730311045461098c26d43d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-18 11:59:13</sys_updated_on>
+        <template><![CDATA[<div class="clock">
+  <span></span>
+    <div class="square">
+      <svg viewBox="0 0 100 100">
+        <g transform="translate(50,50)" class="{{c.darkness}}" >
+          <circle class="clock-face" r="48" />
+          <line ng-repeat="minor in c.minors track by $index" class="minor"
+            y1="42" y2="45" ng-attr-transform="rotate({{360 * $index / c.minors.length}})" />
+          <line ng-repeat="major in c.majors track by $index" class="major"
+            y1="35" y2="46" ng-attr-transform="rotate({{360 * $index / c.majors.length}})" />
+          <line class="hour" y1="2" y2="-20"
+            ng-attr-transform="rotate({{30 * c.date.hours() + c.date.minutes() / 2}})" />
+          <line class="minute" y1="4" y2="-30"
+            ng-attr-transform="rotate({{6 * c.date.minutes() + c.date.seconds() / 10}})" />
+          <g ng-attr-transform="rotate({{6 * c.date.seconds()}})">
+            <line stroke="{{::c.options.c_color}}" class="second" y1="10" y2="-38" />
+            <line stroke="{{::c.options.c_color}}" class="second-counterweight" y1="10" y2="2" />
+          </g>
+        </g>
+      </svg>
+    </div>
+  <div class="text-center text-muted m-t-sm">{{::c.options.title}}</div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

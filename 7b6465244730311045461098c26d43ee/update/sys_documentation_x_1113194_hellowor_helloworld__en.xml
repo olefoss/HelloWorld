@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="" label="HelloWorld" language="en" table="x_1113194_hellowor_helloworld">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>HelloWorld</label>
+            <language>en</language>
+            <name>x_1113194_hellowor_helloworld</name>
+            <plural>HelloWorlds</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-08-18 12:01:17</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>HelloWorld</sys_name>
+            <sys_package display_value="HelloWorld" source="x_1113194_hellowor">7b6465244730311045461098c26d43ee</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="HelloWorld">7b6465244730311045461098c26d43ee</sys_scope>
+            <sys_update_name>sys_documentation_x_1113194_hellowor_helloworld__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-08-18 12:01:17</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

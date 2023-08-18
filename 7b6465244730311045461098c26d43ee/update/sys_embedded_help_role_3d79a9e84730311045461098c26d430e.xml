@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_1113194_hellowor.user" name="x_1113194_hellowor.user">3d79a9e84730311045461098c26d430d</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-18 12:01:23</sys_created_on>
+        <sys_id>3d79a9e84730311045461098c26d430e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3d79a9e84730311045461098c26d430d</sys_name>
+        <sys_package display_value="HelloWorld" source="x_1113194_hellowor">7b6465244730311045461098c26d43ee</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="HelloWorld">7b6465244730311045461098c26d43ee</sys_scope>
+        <sys_update_name>sys_embedded_help_role_3d79a9e84730311045461098c26d430e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-18 12:01:23</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
